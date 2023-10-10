@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<double> marks = new List<double>();
+            int z = 0;
+            while(z == 0)
+            {
+                Console.WriteLine("Enter Student Marks");
+                double No = double.Parse(Console.ReadLine()); 
+            marks.Add(No);
+            
+            double j = 0;
+            for( int i = 0; i< marks.Count; i++)
+            {
+                
+                Console.WriteLine(marks[i]);
+                double sum = marks[i] + j;
+                j = sum;
+            }
+            double listAvg = j / marks.Count;
+            Console.WriteLine("The Avg Marks of Class " + listAvg);
+                Console.WriteLine("For Exit Press 1 ");
+                Console.WriteLine("To Add More Press 0");
+                z = int.Parse(Console.ReadLine());
+
+            }
+        }
+    }
+}
