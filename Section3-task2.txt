@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+
+namespace demo_test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = "Maham";
+           
+            Console.WriteLine(s);
+            char[] sarray = s.ToCharArray();
+            char[] reversed= new char[sarray.Length];
+            string b = "";
+            for (int i = sarray.Length-1; i>=0; i--  )
+            {
+               
+                //Console.Write(sarray[i]);
+                
+                b = b + sarray[i];
+               
+            }
+            b = b.ToLower();
+            s = s.ToLower();
+            if (b==s)
+            {
+                Console.WriteLine("is plindrom");
+            }
+            else
+            {
+                Console.WriteLine("in not plendrome");
+            }
+        }
+
+
+    }
+}
