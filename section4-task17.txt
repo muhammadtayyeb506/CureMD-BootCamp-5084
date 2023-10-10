@@ -1,0 +1,23 @@
+using System;
+
+
+namespace demo_test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] Numbers = { 100, 20, 3, 4, 5, 7 };
+            Array.Sort(Numbers);
+            
+            foreach(int i in Numbers)
+            {
+                Console.WriteLine(i);
+            }
+           
+
+        }
+
+
+    }
+}
