@@ -1,0 +1,19 @@
+for (int i= 0; i<A.Length; i++)
+{
+    int B = 0;
+for (int j=0; j < A.Length; j++)
+{
+        
+    if (i!= j && A[i] == A[j])
+    {
+        B = 1 ;
+            
+    }
+}
+
+    if (B == 0)
+    {
+        Console.WriteLine(A[i]);
+        break;
+    }
+}
